@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css task 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: rgb(52, 137, 110);
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icons  {
+            display: flex;
+            gap: 30px;
+        }
+        .labels{
+            display: flex;
+            gap: 40px;
+        }
+
+
+        img {
+            width: 60px;
+            height: 50px;
+            border-radius: 15%;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        img:hover {
+            transform: translateY(-5px);
+            box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        label {
+            font-size: 16px;
+            color: white;
+            
+        }
+       @media (max-width: 500px) {
+            .icons, .labels {
+                flex-direction: column;
+                gap: 15px;
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="icons">
+            <img src="home.png" alt="Home">
+            <img src="user.png" alt="User">
+            <img src="gallery.png" alt="Gallery">
+            <img src="message.png" alt="Message">
+            <img src="setting.png" alt="Settings">
+        </div>
+        <div class="labels">
+            <label>Home</label>
+            <label>User</label>
+            <label>Gallery</label>
+            <label>Message</label>
+            <label>Settings</label>
+        </div>
+    </nav>
+</body>
+</html>
